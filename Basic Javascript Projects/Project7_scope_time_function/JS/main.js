@@ -20,12 +20,27 @@ function Add_numbers_4() {
 Add_numbers_3();
 Add_numbers_4();
 
-//If statement / Time function
+//If statement
 function get_Date() {
     if (new Date().getHours() < 18) {
         document.getElementById("Greeting").innerHTML = "How are you today?";
     }
 }
+
+//Time function
+function Time_function() {
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    } else if (Time >= 12 == Time < 18) {
+        Reply = "It is afternoon.";
+    } else {
+        Reply = "It is evening time.";
+    }
+    document.getElementById("Time_of_day").innerHTML = Reply;
+}
+
 
 //Function using if, else, and else if conditional statements
 function Color_Function() {
