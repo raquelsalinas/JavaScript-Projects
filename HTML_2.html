@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Form</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Raquel">
+        <script src="Javascript/JavaScript_2.js" defer></script>
+        <link rel="stylesheet" href="CSS/CSS_1.css">
+    </head>
+
+    <body>
+        <h3>Contact Form</h3>
+
+        <div>
+            <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="email">Your email</label>
+                <input type="text" id="email" name="email" placeholder="Your email address..">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
