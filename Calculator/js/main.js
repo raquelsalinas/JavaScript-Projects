@@ -41,6 +41,10 @@ function Handle_Operator(Next_Operator) {
     const Value_of_Input = parseFloat(Display_Value);
     //Checks if an operator already exists and if Wait_Second_Operand is true, then updates the operator an exit from function
     if (operator && Calculator.Wait_Second_Operand) {
+        Calculator.First_Operand = Next_Operator;
+        return;
+    }
+    if (First_Operand == null) {
         Calculator.First_Operand = Value_of_Input;
     } else if (operator) {
         const Value_Now = First_Operand || 0;
@@ -77,7 +81,7 @@ function Update_Display() {
 Update_Display();
 //Section monitors button clicks
 const keys = document.querySelector('.calculator-keys');
-keys.addEventListener('click'), (event) => {
+keys.addEventListener('click', (event) => {
     const {target} = event;
     if (!target.matches('button')) {
         return;
@@ -100,4 +104,4 @@ keys.addEventListener('click'), (event) => {
     }
     Input_Digit(target.value);
     Update_Display();
-}
+})
