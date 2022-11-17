@@ -1,9 +1,9 @@
 # JavaScript-Projects
 ###### These are some small projects I made using JavaScript
 ### Projects
-* [Pizza Menu](./Pizza_Project/pizza_project.html)
-* [Tic-Tac-Toe Game](./TicTacToe/TicTacToe.html)
-* [Calculator](./Calculator/calculator.html)
+* [Pizza Menu](./Tech_Academy/Pizza_Project/pizza_project.html)
+* [Tic-Tac-Toe Game](./Tech_Academy/TicTacToe/TicTacToe.html)
+* [Calculator](./Tech_Academy/Calculator/calculator.html)
 ### Pizza Menu
 ###### This project is a menu used to order pizza with a various selection of toppings. It then takes the input information and calculates a price for the order.
 ### Tic-Tac-Toe Game
